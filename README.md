@@ -8,7 +8,7 @@ ShadowsocksR for Windows
 You will need to download and install [7-Zip](http://www.7-zip.org/) in order 
 to extract the ShadowsocksR archive.
 
-Download the [latest release] for ShadowsocksR for Windows.
+Download the [latest release](https://github.com/shadowsocksr-rm/shadowsocksr-csharp/releases) for ShadowsocksR for Windows.
 
 _Optionally_, right-click on the downloaded 7z file and select 
 **CRC SHA** > **SHA-256**. Verify that the SHA-256 checksum displayed 
