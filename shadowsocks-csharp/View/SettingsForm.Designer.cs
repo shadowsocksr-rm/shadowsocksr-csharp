@@ -77,6 +77,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LocalDNSText = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.LabelLogging = new System.Windows.Forms.Label();
+            this.CheckLogEnable = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.Socks5ProxyGroup.SuspendLayout();
@@ -91,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumReconnect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumTTL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumTimeout)).BeginInit();
+            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -104,6 +108,7 @@
             this.tableLayoutPanel1.Controls.Add(this.Socks5ProxyGroup, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.ListenGroup, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel10, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 16);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -711,6 +716,43 @@
             this.LocalDNSText.TabIndex = 17;
             this.LocalDNSText.WordWrap = false;
             // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Controls.Add(this.LabelLogging, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.CheckLogEnable, 1, 1);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(372, 132);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 3;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(205, 100);
+            this.tableLayoutPanel6.TabIndex = 4;
+            // 
+            // LabelLogging
+            // 
+            this.LabelLogging.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.LabelLogging.AutoSize = true;
+            this.LabelLogging.Location = new System.Drawing.Point(3, 5);
+            this.LabelLogging.Name = "LabelLogging";
+            this.LabelLogging.Size = new System.Drawing.Size(45, 13);
+            this.LabelLogging.TabIndex = 0;
+            this.LabelLogging.Text = "Logging";
+            // 
+            // CheckLogEnable
+            // 
+            this.CheckLogEnable.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CheckLogEnable.AutoSize = true;
+            this.CheckLogEnable.Location = new System.Drawing.Point(54, 3);
+            this.CheckLogEnable.Name = "CheckLogEnable";
+            this.CheckLogEnable.Size = new System.Drawing.Size(80, 17);
+            this.CheckLogEnable.TabIndex = 1;
+            this.CheckLogEnable.Text = "Enable Log";
+            this.CheckLogEnable.UseVisualStyleBackColor = true;
+            // 
             // SettingsForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -748,6 +790,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumReconnect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumTTL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumTimeout)).EndInit();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -804,5 +848,8 @@
         private System.Windows.Forms.CheckBox checkSwitchAutoCloseAll;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox LocalDNSText;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label LabelLogging;
+        private System.Windows.Forms.CheckBox CheckLogEnable;
     }
 }

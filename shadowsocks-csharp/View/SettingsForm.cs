@@ -83,6 +83,7 @@ namespace Shadowsocks.View
             checkSwitchAutoCloseAll.Text = I18N.GetString(checkSwitchAutoCloseAll.Text);
             checkRandom.Text = I18N.GetString(checkRandom.Text);
             CheckAutoBan.Text = I18N.GetString("AutoBan");
+            CheckLogEnable.Text = I18N.GetString("Enable Log");
 
             Socks5ProxyGroup.Text = I18N.GetString(Socks5ProxyGroup.Text);
             checkBoxPacProxy.Text = I18N.GetString(checkBoxPacProxy.Text);
@@ -158,6 +159,7 @@ namespace Shadowsocks.View
 
                 _modifiedConfiguration.autoBan = CheckAutoBan.Checked;
                 _modifiedConfiguration.checkSwitchAutoCloseAll = checkSwitchAutoCloseAll.Checked;
+                _modifiedConfiguration.logEnable = CheckLogEnable.Checked;
 
                 return ret;
             }
@@ -205,6 +207,7 @@ namespace Shadowsocks.View
 
             CheckAutoBan.Checked = _modifiedConfiguration.autoBan;
             checkSwitchAutoCloseAll.Checked = _modifiedConfiguration.checkSwitchAutoCloseAll;
+            CheckLogEnable.Checked = _modifiedConfiguration.logEnable;
         }
 
         private void LoadCurrentConfiguration()
